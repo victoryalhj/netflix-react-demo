@@ -6,13 +6,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet } from 'react-router-dom';
+import '../App.css';
+import { Link } from "react-router-dom"
 
 const AppLayout = () => {
   return (
     <div>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" data-bs-theme="dark" variant="dark" expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <div className="logo">
+          <Navbar.Brand href="#">
+            <img 
+            width={100}
+            src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt=""/>
+          </Navbar.Brand>
+        </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,8 +28,8 @@ const AppLayout = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Link to="/" className="nav-item">Home</Link>
+            <Link to="/movies" className="nav-item">Movies</Link>
 
           </Nav>
           <Form className="d-flex">
@@ -31,7 +39,7 @@ const AppLayout = () => {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-danger">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
