@@ -16,9 +16,10 @@ const AppLayout = () => {
       <Container fluid>
         <div className="logo">
           <Navbar.Brand href="#">
-            <img 
+          <img 
             width={100}
-            src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt=""/>
+            src="/img/netflix-logo.jpg" 
+            alt="Netflix Logo"/>
           </Navbar.Brand>
         </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
