@@ -32,7 +32,7 @@ const PopularMovieSlide = () => {
     return <Alert variant="danger">{error.message}</Alert>
   }
   return (
-  <div>
+  <div className="popularMovie">
     <h3>Popular Movies</h3>
     <Carousel
       infinite={true}

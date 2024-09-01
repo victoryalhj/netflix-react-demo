@@ -23,3 +23,23 @@
 .banner-text-area > * {
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .banner-text-area {
+    width: 40%;
+  }
+
+  .banner-text-area h1 {
+    font-size: 20px;
+    /* color: black; */
+    font-weight: 800;
+  }
+  .banner-text-area p {
+    font-size: 15px;
+    display: -webkit-box;            /* Flexbox로 요소를 박스 형태로 만듦 */
+    -webkit-box-orient: vertical;    /* Flexbox 방향을 수직으로 설정 */
+    overflow: hidden;                /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis;         /* 넘치는 부분에 말줄임표(...) 추가 */
+    -webkit-line-clamp: 4;           /* 최대 줄 수를 4줄로 제한 */
+  }
+}
