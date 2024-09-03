@@ -3,7 +3,7 @@ import { useUpcomingMoviesQuery } from '../../../../hooks/useUpComingMoviesQuery
 import { Alert } from "bootstrap"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import MovieCard from '../MovieCard/MovieCard';
+import MovieCard from '../../../../common/MovieCard/MovieCard';
 import "./UpcomingMovieSlide.style.css"
 
 const responsive = {

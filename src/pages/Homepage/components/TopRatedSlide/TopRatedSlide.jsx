@@ -3,7 +3,7 @@ import { useTopRatedMoviesQuery } from '../../../../hooks/useTopRatedMovies'
 import { Alert } from "bootstrap"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import MovieCard from '../MovieCard/MovieCard';
+import MovieCard from '../../../../common/MovieCard/MovieCard';
 import "./TopRatedSlide.style.css"
 
 const responsive = {

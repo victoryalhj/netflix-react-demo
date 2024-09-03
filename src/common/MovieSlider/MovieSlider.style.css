@@ -1,0 +1,21 @@
+.carousel-container {
+  overflow: hidden;
+  height: 440px;
+  background-size: 100vh;
+  background-color: #333337;
+}
+.popularMovie {
+  background-color: #333337;
+}
+.popularMovie h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 35px 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .popularMovie h3 {
+    font-size: 30px;
+  }
+}
