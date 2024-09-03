@@ -13,10 +13,14 @@ const MovieCard = ({movie}) => {
     const genreNameList=genreIdList.map((id)=>{
       const genreObj = genreData.find((genre)=>genre.id === id)
       return genreObj.name;
-    })
+    });
+    if (genreNameList.length > 1) {
+      return [...genreNameList.slice(0, 1)];
+    }
 
-    return genreNameList
-  }
+    return genreNameList;
+  };
+
   return (
     <div
       style={{
