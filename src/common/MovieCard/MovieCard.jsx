@@ -15,7 +15,7 @@ const MovieCard = ({movie}) => {
       return genreObj.name;
     });
     if (genreNameList.length > 1) {
-      return [...genreNameList.slice(0, 1)];
+      return [...genreNameList.slice(0, 2)];
     }
 
     return genreNameList;
