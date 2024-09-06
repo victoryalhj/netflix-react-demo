@@ -13,3 +13,18 @@
   height: 100vh;
   margin-top: 90px;
 }
+
+.pagination .page-link {
+  color: #fff; /* 기본 링크 색상 */
+  background-color: #333337; /* 기본 배경색 */
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.pagination .active .page-link {
+  background-color: red; 
+  border-color: red;     
+  color: white;          
+}
