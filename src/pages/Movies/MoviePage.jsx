@@ -15,7 +15,7 @@ import ReactPaginate from 'react-paginate';
 // page 값이 바뀔때마다 useSearchMovie에 page까지 넣어서 fetch
 
 const MoviePage = () => {
-  const [query, setQuery] = useSearchParams();
+  const [query] = useSearchParams();
   const [page,setPage] = useState(1);
   const keyword = query.get("q");
   const navigate = useNavigate();
